@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
 $bright-blue: hsl(220, 98%, 61%);
 $very-light-gray: hsl(0, 0%, 98%);
 $very-light-grayish-blue: hsl(236, 33%, 92%);
@@ -26,6 +28,7 @@ $very-dark-grayish-blue: hsl(237, 14%, 26%);
 .page-background {
     grid-area: hb;
     background: $very-dark-blue;
+    position: relative;
 }
 
 .container {
@@ -37,5 +40,7 @@ $very-dark-grayish-blue: hsl(237, 14%, 26%);
     height: 100vh;
 }
 
-
-
+.todo-container {
+    position: absolute;
+    display: flex;
+}
