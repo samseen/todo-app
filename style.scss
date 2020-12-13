@@ -15,6 +15,10 @@ $dark-grayish-blue: hsl(234, 11%, 52%);
 $very-dark-grayish-blue: hsl(233, 14%, 35%);
 $very-dark-grayish-blue: hsl(237, 14%, 26%);
 
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 .header-banner {
     grid-area: ha;
 }
@@ -29,6 +33,9 @@ $very-dark-grayish-blue: hsl(237, 14%, 26%);
     grid-area: hb;
     background: $very-dark-blue;
     position: relative;
+    display: grid;
+    align-items: center;
+    justify-items: center;
 }
 
 .container {
@@ -41,6 +48,46 @@ $very-dark-grayish-blue: hsl(237, 14%, 26%);
 }
 
 .todo-container {
+    width: 50%;
     position: absolute;
     display: flex;
+    flex-direction: column;
+}
+
+.header-text {
+    font-size: 150%;
+    color: $very-light-gray;
+    font-weight: 700;
+}
+
+.header {
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-icon {
+    width: 26px;
+    height: 26px;
+    align-self: center;
+}
+
+.todo-input {
+    margin-top: 2rem;
+    color: $very-dark-desaturated-blue;
+}
+
+.todo-input .current-item {
+    background: $very-dark-desaturated-blue;
+    width: 100%;
+    height: 2.5rem;
+    border: none;
+    border-radius: 0.2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    color: $very-light-gray;
+    font-size: 150%;
+}
+
+.todo-input .current-item:focus {
+    outline: none;
 }
