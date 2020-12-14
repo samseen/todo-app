@@ -130,7 +130,6 @@ input[type="radio"]{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1rem;
     // padding-left: 60px;
     // padding-right: 60px;
     width: 100%;
@@ -150,6 +149,18 @@ input[type="radio"]{
     margin-left: 60px;
 }
 
+.m-t-1 {
+    margin-top: 1rem;
+}
+
 .item-text {
     color: $light-grayish-blue;
+}
+
+.b-b-white {
+    border-bottom: 1px solid $very-dark-grayish-blue;
+}
+
+.strike {
+    text-decoration: line-through;
 }
