@@ -23,7 +23,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 35% auto;
+    grid-template-rows: 40% auto;
     grid-template-areas: 
         "ha"
         "hb";
@@ -61,6 +61,7 @@ body {
 .main-content {
     position: absolute;
     width: 40%;
+    margin-top: 4rem;
 }
 
 .header-text {
@@ -121,4 +122,34 @@ input[type="radio"]{
     height: 20px; /*Desired height*/
     cursor: pointer;
     filter: grayscale(1);
+}
+
+.todo-item {
+    background: $very-dark-desaturated-blue;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    // padding-left: 60px;
+    // padding-right: 60px;
+    width: 100%;
+}
+
+.text-component {
+    position: relative;
+}
+
+.adjust-to-board {
+    position: absolute;
+    top: 8px;
+    left: 20px;
+}
+
+.m-l-20 {
+    margin-left: 60px;
+}
+
+.item-text {
+    color: $light-grayish-blue;
 }
