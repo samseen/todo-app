@@ -170,4 +170,11 @@ input[type="radio"]{
 
 .todo-menu {
     color: $very-dark-grayish-blue;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+.pointer-cursor {
+    cursor: pointer;
 }
