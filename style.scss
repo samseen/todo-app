@@ -96,6 +96,8 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     color: $very-light-gray;
     font-size: 150%;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 .todo-input .current-item:focus {
@@ -104,6 +106,19 @@ body {
 
 .todo-input .check-todo {
     position: absolute;
-    top: 10px;
+    top: 6px;
     left: 20px;
+}
+
+input[type="text"] {
+    -webkit-box-sizing: border-box; // Safari/Chrome, other WebKit
+    -moz-box-sizing: border-box;    // Firefox, other Gecko
+    box-sizing: border-box;         // Opera/IE 8+
+}
+
+input[type="radio"]{
+    width: 20px; /*Desired width*/
+    height: 20px; /*Desired height*/
+    cursor: pointer;
+    filter: grayscale(1);
 }
