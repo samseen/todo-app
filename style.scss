@@ -13,7 +13,7 @@ $light-grayish-blue: hsl(234, 39%, 85%);
 $light-grayish-blue-hover: hsl(236, 33%, 92%);
 $dark-grayish-blue: hsl(234, 11%, 52%);
 $very-dark-grayish-blue: hsl(233, 14%, 35%);
-$very-dark-grayish-blue: hsl(237, 14%, 26%);
+$so-very-dark-grayish-blue: hsl(237, 14%, 26%);
 
 body {
     font-family: 'Josefin Sans', sans-serif;
@@ -71,7 +71,6 @@ body {
 }
 
 .header {
-    border: 1px solid white;
     display: flex;
     justify-content: space-between;
 }
@@ -163,4 +162,12 @@ input[type="radio"]{
 
 .strike {
     text-decoration: line-through;
+}
+
+.todo-status {
+    display: flex;
+}
+
+.todo-menu {
+    color: $very-dark-grayish-blue;
 }
