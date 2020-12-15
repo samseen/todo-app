@@ -82,7 +82,7 @@ body {
 }
 
 .todo-input {
-    margin-top: 2rem;
+    margin-top: 0.5rem;
     color: $very-dark-desaturated-blue;
     position: relative;
 }
@@ -166,6 +166,9 @@ input[type="radio"]{
 
 .todo-status {
     display: flex;
+    width: 180px;
+    justify-content: space-between;
+
 }
 
 .todo-menu {
