@@ -39,8 +39,6 @@ body {
 }
 
 .todo-container {
-    // width: 50%;
-    // position: absolute;
     display: flex;
     flex-direction: column;
 }
@@ -61,13 +59,17 @@ body {
 .main-content {
     position: absolute;
     width: 40%;
-    margin-top: 4rem;
+    margin-top: 2rem;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
 }
 
 .header-text {
-    font-size: 150%;
+    font-size: 200%;
     color: $very-light-gray;
     font-weight: 700;
+    letter-spacing: 1rem;
 }
 
 .header {
@@ -166,7 +168,7 @@ input[type="radio"]{
 
 .todo-status {
     display: flex;
-    width: 180px;
+    width: 120px;
     justify-content: space-between;
 
 }
@@ -188,4 +190,10 @@ input[type="radio"]{
 
 .all-todo-items {
     color: $bright-blue;
+}
+
+.reorder-text {
+    display: flex;
+    justify-content: center;
+    color: $very-light-gray;
 }
