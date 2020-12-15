@@ -162,6 +162,10 @@ input[type="radio"]{
     cursor: pointer;
 }
 
+.item-text.close-icon {
+	display: block;
+}
+
 .b-b-white {
     border-bottom: 1px solid $very-dark-grayish-blue;
 }
@@ -205,3 +209,7 @@ input[type="radio"]{
 .close-icon {
     display: none;
 }
+
+// .todo-item:hover + .close-icon {
+//     display: block;
+// }

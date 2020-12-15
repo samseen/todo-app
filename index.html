@@ -78,7 +78,7 @@
         <div class="todo-item b-b-white">
           <div class="text-component">
             <input class="check-todo adjust-to-board" type="radio" name="" id="">
-            <p class="m-l-20 item-text">Pick up groceries</p>
+            <p class="m-l-20 item-text" onmouseover="hideCloseIcon()">Pick up groceries</p>
           </div>
           <div class="img-icon close-icon">
             <img src="images/icon-cross.svg" alt="">
@@ -89,7 +89,7 @@
             <input class="check-todo adjust-to-board" type="radio" name="" id="">
             <p class="m-l-20 item-text">Complete todo app on Frontend Mentor</p>
           </div>
-          <div class="img-icon close-icon">
+          <div class="img-icon">
             <img src="images/icon-cross.svg" alt="">
           </div>
         </div>
@@ -127,5 +127,28 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+  <script>
+    function hideCloseIcon(e) {
+      var listItem = document.getElementsByClassName("item-text");
+      /*listItem.forEach(itemText => {
+        itemText.addEventListener("click", function( event ) {
+          console.log("Entered.");
+        })
+      });*/
+      for (const child of listItem) {
+        //var currentText = child.closest(".todo-item");
+        //console.log(child);
+        e.style.visibility = "hidden"
+      }
+    }
+  </script>
+  <!-- <script>
+    function show(id) {
+      document.getElementById(id).style.visibility = "visible";
+    }
+    function hide(id) {
+      document.getElementById(id).style.visibility = "hidden";
+    }
+  </script> -->
 </body>
 </html>
