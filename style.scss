@@ -97,7 +97,7 @@ body {
     border-radius: 0.2rem;
     font-family: 'Josefin Sans', sans-serif;
     color: $very-light-gray;
-    font-size: 150%;
+    font-size: 120%;
     padding-left: 60px;
     padding-right: 60px;
 }
@@ -158,6 +158,10 @@ input[type="radio"]{
     color: $light-grayish-blue;
 }
 
+.item-text:hover {
+    cursor: pointer;
+}
+
 .b-b-white {
     border-bottom: 1px solid $very-dark-grayish-blue;
 }
@@ -196,4 +200,8 @@ input[type="radio"]{
     display: flex;
     justify-content: center;
     color: $very-light-gray;
+}
+
+.close-icon {
+    display: none;
 }
