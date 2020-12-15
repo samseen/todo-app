@@ -181,3 +181,11 @@ input[type="radio"]{
 .pointer-cursor {
     cursor: pointer;
 }
+
+.pointer-cursor:hover {
+    color: $very-light-gray;
+}
+
+.all-todo-items {
+    color: $bright-blue;
+}
