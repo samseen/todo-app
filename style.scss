@@ -186,6 +186,13 @@ input[type="radio"]{
     padding-left: 30px;
     padding-right: 30px;
     box-sizing: border-box;
+
+    background: $very-dark-desaturated-blue;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .pointer-cursor {
