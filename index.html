@@ -32,7 +32,7 @@
       <div class="header">
         <h1 class="header-text">TODO</h1>
         <div class="img-icon">
-          <img src="images/icon-sun.svg" alt="">
+          <img class="toggleIcon" src="images/icon-sun.svg" alt="">
         </div>
       </div>
   
@@ -153,10 +153,13 @@
       const styleLink = pageStyle.getAttribute("href");
       if(styleLink == "css/darkstyle.css") {
         pageStyle.setAttribute("href", "css/lightstyle.css");
+        const iconName = toggleTheme.querySelector('.toggleIcon');
+        iconName.src = "images/icon-moon.svg";
       } else if(styleLink == "css/lightstyle.css") {
         pageStyle.setAttribute("href", "css/darkstyle.css");
+        const iconName = toggleTheme.querySelector('.toggleIcon');
+        iconName.src = "images/icon-sun.svg";
       }
-      console.log(toggleTheme)
     }
   </script>
 </body>
