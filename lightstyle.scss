@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+$bright-blue: hsl(220, 98%, 61%);
+$very-light-gray: hsl(0, 0%, 98%);
+$very-light-grayish-blue: hsl(236, 33%, 92%);
+$light-grayish-blue: hsl(233, 11%, 84%);
+$dark-grayish-blue: hsl(236, 9%, 61%);
+$very-dark-grayish-blue: hsl(235, 19%, 35%);
+
+$very-dark-blue: hsl(235, 21%, 11%);
+$very-dark-desaturated-blue: hsl(235, 24%, 19%);
+$light-grayish-blue: hsl(234, 39%, 85%);
+$light-grayish-blue-hover: hsl(236, 33%, 92%);
+$dark-grayish-blue: hsl(234, 11%, 52%);
+$very-dark-grayish-blue: hsl(233, 14%, 35%);
+$so-very-dark-grayish-blue: hsl(237, 14%, 26%);
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 40% auto;
+    grid-template-areas: 
+        "ha"
+        "hb";
+    height: 100vh;
+    position: relative;
+    justify-items: center;
+    // align-items: center;
+}
+
+.header-banner {
+    grid-area: ha;
+    position: relative;
+}
+
+.todo-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.page-background {
+    grid-area: hb;
+    background: $very-light-grayish-blue;
+    position: relative;
+    width: 100%;
+}
+
+.main-content {
+    position: absolute;
+    width: 40%;
+    margin-top: 2rem;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+}
+
+.header-text {
+    font-size: 200%;
+    color: $very-light-gray;
+    font-weight: 700;
+    letter-spacing: 1rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-icon {
+    width: 26px;
+    height: 26px;
+    align-self: center;
+}
+
+.todo-input {
+    margin-top: 0.5rem;
+    color: $very-dark-desaturated-blue;
+    position: relative;
+}
+
+.todo-input .current-item {
+    background: $very-light-gray;
+    width: 100%;
+    height: 2.5rem;
+    border: none;
+    border-radius: 0.2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    color: $very-dark-grayish-blue;
+    font-size: 120%;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.todo-input .current-item:focus {
+    outline: none;
+}
+
+.todo-input .check-todo {
+    position: absolute;
+    top: 6px;
+    left: 20px;
+}
+
+input[type="text"] {
+    -webkit-box-sizing: border-box; // Safari/Chrome, other WebKit
+    -moz-box-sizing: border-box;    // Firefox, other Gecko
+    box-sizing: border-box;         // Opera/IE 8+
+}
+
+input[type="radio"]{
+    width: 20px; /*Desired width*/
+    height: 20px; /*Desired height*/
+    cursor: pointer;
+    filter: grayscale(1);
+}
+
+.todo-item {
+    background: $very-light-gray;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.text-component {
+    position: relative;
+}
+
+.adjust-to-board {
+    position: absolute;
+    top: 8px;
+    left: 20px;
+}
+
+.m-l-20 {
+    margin-left: 60px;
+}
+
+.m-t-1 {
+    margin-top: 1rem;
+}
+
+.item-text {
+    color: $very-dark-grayish-blue;
+}
+
+.item-text:hover {
+    cursor: pointer;
+}
+
+.item-text.close-icon {
+	display: block;
+}
+
+.b-b-white {
+    border-bottom: 1px solid $very-dark-grayish-blue;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+.todo-status {
+    display: flex;
+    width: 120px;
+    justify-content: space-between;
+
+}
+
+.todo-menu {
+    color: $dark-grayish-blue;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+
+    background: $very-light-gray;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.pointer-cursor {
+    cursor: pointer;
+}
+
+.pointer-cursor:hover {
+    color: $very-dark-grayish-blue;
+}
+
+.all-todo-items {
+    color: $bright-blue;
+}
+
+.reorder-text {
+    display: flex;
+    justify-content: center;
+    color: $dark-grayish-blue;
+}
+
+.close-icon {
+    display: none;
+}
+
+input.radio:hover {
+    background:$bright-blue;
+}

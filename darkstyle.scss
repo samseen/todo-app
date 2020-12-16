@@ -215,6 +215,6 @@ input[type="radio"]{
     display: none;
 }
 
-// .todo-item:hover + .close-icon {
-//     display: block;
-// }
+input.radio:hover {
+    background:$bright-blue;
+}

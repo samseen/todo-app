@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/style.css">
+
+  <link id="pageStyle" rel="stylesheet" href="css/darkstyle.css">
+  <!-- <link id="pageStyle" rel="stylesheet" href="css/lightstyle.css"> -->
 
   <title>Frontend Mentor | Todo app</title>
 
@@ -19,7 +21,8 @@
 
   <div class="container">
     <div class="header-banner">
-      <img src="images/bg-desktop-dark.jpg" alt="">
+      <!-- <img src="images/bg-desktop-dark.jpg" alt=""> -->
+      <img src="images/bg-desktop-light.jpg" alt="">
     </div>
     <div class="page-background">
       <div class="todo-container">
@@ -141,6 +144,20 @@
         closeIcon.classList.add("close-icon")
       })
     })
+
+    const toggleTheme = document.querySelector(".img-icon");
+    toggleTheme.addEventListener("click", swapTheme);
+    
+    function swapTheme() {
+      const pageStyle = document.getElementById('pageStyle');
+      const styleLink = pageStyle.getAttribute("href");
+      if(styleLink == "css/darkstyle.css") {
+        pageStyle.setAttribute("href", "css/lightstyle.css");
+      } else if(styleLink == "css/lightstyle.css") {
+        pageStyle.setAttribute("href", "css/darkstyle.css");
+      }
+      console.log(toggleTheme)
+    }
   </script>
 </body>
 </html>
